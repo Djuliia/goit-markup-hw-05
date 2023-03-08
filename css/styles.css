@@ -343,7 +343,7 @@ body {
   border: 1px solid var(--color-subtle-text);
   border-radius: 4px;
   padding: 16px 32px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -355,6 +355,7 @@ body {
   width: 104px;
   height: 56px;
   fill: var(--color-subtle-text);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover .customers-logo,
