@@ -429,7 +429,7 @@ body {
 .filters-btn {
   color: var(--color-primary-brand);
   background-color: var(--color-light);
-  border: 1px solid #E7E9FC;
+  border: 1px solid var(--color-accent);
   border-radius: 4px;
   padding: 12px 24px;
   border: none;
@@ -475,15 +475,15 @@ body {
 
 .portfolio-card-desc {
   padding: 32px 16px;
-  border-left: 1px solid var(--color-accent);
-  border-right: 1px solid var(--color-accent);
-  border-bottom: 1px solid var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-top: 0;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover .portfolio-card-desc,
 .portfolio-link:focus .portfolio-card-desc {
-  border: 1px solid #F4F4FD;
+  border: 1px solid var(--color-light);
+  border-top: 0;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -568,8 +568,10 @@ body {
   width: 8px;
   height: 8px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor:pointer;
 }
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale (1.2);
+
+.backdrop.is-hidden .modal{
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
